@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <title>Portafolio Profesional | Diego Pascual</title>
+</head>
+<body>
+    <span class="sombra">
+        <section id="inicio" class="inicio">
+            <div class="contenido">
+                <header>
+                    <div class="logo">
+                        <i class="fa-brands fa-codepen"></i>
+                        <h1>Diego Pascual</h1>
+                    </div>
+                    <nav id="nav" class="">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#sobre_mi">Sobre Mí</a>
+                        <a href="#trabajos">Proyectos</a>
+                        <a href="#testimonios">Testimonios</a>
+                        <a href="#contacto">Contacto</a>
+                    </nav>
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </header>
+                <div class="fila">
+                    <div class="col">
+                        <h2>¡Hola Bienvenid@!</h2>
+                        <h1>>> Diego Armando Pascual Pascual</h1>
+                        <p>¡La programación no es solo una habilidad, es una forma de pensar!</p>
+                    </div>
+                    <div class="col">
+                        <div class="contenedor-img">
+                            <img src="img/fotoDiego.jpg" alt="Foto-D    iego">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </span>
+
+    <!-- Sección Sobre Mi -->
+    <section id="sobre_mi" class="servicios">
+        <div class="sobre-mi">
+                <center><h2>Conoce a Diego Armando Pascual Pascual</h2></center><br>
+                <p>Soy alumno de la Universidad Tecnológica de Huasteca Hidalguense, actualmente curso el 10mo cuatrimestre de la carrera en Ingenieria en Desarrollo y Gestión de Software.</p>
+                <p>Desde que ingresé a la universidad  he estado inmerso en proyectos desafiantes que me han permitido aplicar mis conocimientos y habilidades. He participado en el desarrollo de aplicaciones de escritorio, web y móviles.</p>
+                <p>En mi tiempo libre, me gusta investigar sobre nuevas tecnologías, editar videos, escuchar música y jugar videojuegos.</p>
+                <p>Mi objetivo es seguir creciendo como desarrollador y contribuir al desarrollo de aplicaciones que tengan un impacto positivo en la sociedad.</p>     
+        </div>
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color1">
+                        <div class="circulo">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                    </div>
+                    <h3>Desarrollo</h3>
+                    <p>Con mi equipo de trabajo he realizado proyectos desafiantes que me han permitido aplicar mis conocimientos y habilidades, en:</p>
+                        <p>- Aplicaciones Web</p>
+                        <p>- Aplicaciones Móviles</p>
+                        <p>- Aplicaciones de Escritorio</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color2">
+                        <div class="circulo">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <h3>Hobbies</h3>
+                    <p>Me gusta investigar sobre nuevas tecnologías, editar videos, escuchar música y jugar videojuegos.</p>
+                        <p>- WonderShare Filmora</p>
+                        <p>- Spotify</p>
+                        <p>- Xbox</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color3">
+                        <div class="circulo">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                    </div>
+                    <h3>Tecnologías</h3>
+                    <p>La programación es un campo que me apasiona. Me gusta escribir código y resolver problemas informáticos.</p>
+                        <p>- Frameworks: Angular, Laravel, React js React Native</p>
+                        <p>- Lenguajes: Python, Java, C#, JavaScript, C++</p>
+                        <p>- MySQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section class="trabajos" id="trabajos">
+        <h2>Mis proyectos recientes</h2>
+
+        <nav>
+            <a href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
+            <a href="javascript:void(0)" class="" id="disenio" onclick="verCategoria('disenio')">Web</a>
+            <a href="javascript:void(0)" class="" id="programacion" onclick="verCategoria('programacion')">Programación</a>
+            <a href="javascript:void(0)" class="" id="animaciones" onclick="verCategoria('animaciones')">Animaciones</a>
+        </nav>
+
+        <div class="galeria">
+            <div class="item disenio">
+                <img src="img/Portafolio.png" alt="">
+                <div class="info">
+                    <h3>Portafolio Profesional</h3>
+                    <a href="#">Ver Trabajo</a>
+                    <a href="#">Repositorio GitHub</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="img/ubr.jpeg" alt="">
+                <div class="info">
+                    <h3>Sistema de citas UBR</h3>
+                    <a href="https://github.com/Yeremmi789/UBR_Proyect.git">Ver Trabajo</a>
+                    <a href="https://github.com/Yeremmi789/UBR_Proyect.git">Repositorio GitHub</a>
+                </div>
+            </div>
+            <div class="item animaciones">
+                <img src="img/Carrusel.png" alt="">
+                <div class="info">
+                    <h3>Carrusel 3D</h3>
+                    <a href="https://carrusel-eight.vercel.app/">Ver Trabajo</a> 
+                    <a href="https://github.com/DiegoAPascual/Carrusel3D.git">Repositorio GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion Testimonios-->
+    <section id="testimonios" class="testimonials">
+        <h2>Testimonios</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="testimonial">
+                    <img src="img/foto-Diana.jpg" alt="Cliente 1">
+                    <p>"Trabajar con Diego ha sido una experiencia buena. Su dedicación y conocimientos técnicos muy buenos."</p>
+                    <p class="author">- Diana Rivera Castillo</p>
+                </div>
+                <div class="testimonial">
+                    <img src="img/Foto-Yeremmi.jpg" alt="Cliente 2">
+                    <p>"Diego es un buen comunicador. Siempre está dispuesto a compartir su conocimiento y a ayudar a los demás a crecer."</p>
+                    <p class="author">- Yeremmi Sarmiento Alonzo</p>
+                </div>
+                <div class="testimonial">
+                    <img src="img/Foto-Rodrigo.jpg" alt="Cliente 3">
+                    <p>"Es un desarrollador muy dedicado y responsable. Para el es sencillo integrarse en nuevos equipos de trabajo, asi que siempre esta trabajado de excelente forma cumpliendo con lo que se le indique."</p>
+                    <p class="author">- Rodrigo Martínez Hernández</p>
+                </div>
+            </div>
+            <button id="prevBtn" onclick="moveCarousel(-1)">&lt;</button>
+            <button id="nextBtn" onclick="moveCarousel(1)">&gt;</button>
+        </div>
+    </section>
+
+    <!-- sección contacto -->
+    <section class="contacto" id="contacto">
+        <div class="contenedor-contacto">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="info">
+                        <h3>Email:</h3>
+                        <p>diegopascual2019@gmail.com</p>
+                    </div>
+                    <div class="info">
+                        <h3>Teléfono:</h3>
+                        <p>+55 7711601395</p>
+                    </div>
+                    <div class="info">
+                        <h3>País</h3>
+                        <p>México</p>
+                    </div>
+                    <div class="info">
+                        <h3>Estado:</h3>
+                        <p>Hidalgo</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="Nombre...">
+                    <input type="text" placeholder="Correo...">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar" class="btn">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Diego Pascual - Portafolio Profesional - 2023</p>
+        <div class="socialMedia">
+            <a href="#">
+                <img src="img/facebook.png" alt="">
+            </a>
+            <a href="#">
+                <img src="img/instagram.png" alt="">
+            </a>
+            <a href="#">
+                <img src="img/twitter.png" alt="">
+            </a>
+            <a href="#">
+                <img src="img/gmail.png" alt="">
+            </a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
